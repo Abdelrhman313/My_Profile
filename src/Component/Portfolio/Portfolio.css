@@ -1,0 +1,123 @@
+.Portfolio{
+    width: 90%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    position: relative;
+    margin-left: 10%;
+}
+
+.Portfolio h2{
+    font-size: 2em;
+    color: #3b53d9;
+    margin: 10px 0px;
+}
+
+.Portfolio .content{
+    width: 25%;
+    float: left;
+    height: 240px;
+    margin: 10px 1%;
+    border-radius: 5px;
+    position: relative;
+    background-image: url("/image/portfolio/1.jpg");
+    background-size: cover;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px #3b53d9;
+    overflow: hidden;
+}
+
+.Portfolio .content:first-of-type,
+.Portfolio .content:nth-of-type(4){
+    margin-left: 10%;
+}
+
+.Portfolio .content .overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #7a000866;
+    opacity: 0;
+    z-index: 999;
+    transition: all 0.5s ease-in-out;
+}
+
+.Portfolio .content:hover .overlay{
+    opacity: 1;
+}
+
+.Portfolio .content img{width: 100%;}
+
+.apperImg{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 1600px;
+    background-color: #7a000866;
+    z-index: 9999; 
+}
+
+.apperImg img{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+/*For Mobile Media*/
+@media(max-width:767px){
+    .Portfolio{
+        margin: 0;
+        width: 100%;
+        padding-top: 80px;
+    }
+    .Portfolio>.content{
+        width: 80%;
+        margin:15px auto;
+        float: none;
+        height: 240px;
+    }
+    .Portfolio h2{ 
+        margin-bottom: 30px;
+    }
+    .apperImg{    top: 70px;}
+    .xxx{margin-left:auto !important;}
+}
+@media(min-width:768px){
+    .Portfolio{
+        width: 90%;
+        padding-top: 20px;
+        margin-left: 10%;
+    }
+    .Portfolio h2{
+        margin-bottom: 30px;
+    }
+    .Portfolio .content{
+        width: 40%;
+        float: left;
+    }
+    .Portfolio .content:nth-of-type(3){margin-left: 10% !important;}
+    .Portfolio .content:nth-of-type(4){margin-left: auto !important;}
+    .Portfolio .content:nth-of-type(5){margin-left: 10% !important;}
+}
+@media(min-width:1200px){
+    .Portfolio{
+        width: 90%;
+        height: 100%;
+        float: left;
+        margin-left: 10%;
+    }
+    .Portfolio .content{
+        width: 25%;
+        float: left;
+        margin: 10px 1%;
+    }
+    .Portfolio .content:nth-of-type(3),.Portfolio .content:nth-of-type(5){
+        margin-left: auto !important;
+    }
+    .Portfolio .content:nth-of-type(4){
+        margin-left: 10% !important;
+    }
+}

@@ -1,0 +1,141 @@
+.navbarSection{
+    width: 10%;
+    float: left;
+    background: #cb2d3e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, #E91E63, #8c85f4);
+    background: linear-gradient(45deg, #E91E63, #8c85f4);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.navbarSection .brand{
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    line-height: 94px;
+    font-size: 35px;
+}
+
+.collapse{
+    display: none;
+    font-size: 35px;
+    float: right;
+    margin-right: 15px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.navbarSection .menu{
+    width: 100%;
+    height: 60%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.navbarSection .menu li{
+    height: 20%;
+    border-bottom: 1px solid #fff;
+    line-height: 75px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.navbarSection .menu li:first-of-type{
+    border-top: 1px solid #fff;
+}
+
+.navbarSection .menu li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.active{
+    font-weight: bold;
+}
+
+.active a{
+    color:#bfbfbf !important;
+}
+
+.navbarSection .social-icon{
+    width: 100%;
+    height: 25%;
+    text-align: center;
+}
+
+.navbarSection .social-icon i{
+    display: block;
+    height: 33.33%;
+    font-size: 30px;
+    line-height: 55px;
+    cursor: pointer;
+}
+
+/*For Mobile Media*/
+@media(max-width:767px){
+    .navbarSection{
+        width: 100%;
+        height: 70px !important;
+    }
+    .navbarSection .menu,.social-icon{
+        display: none;
+    }
+    .navbarSection .brand{
+        float: left;line-height: 70px;
+        font-size: 35px;
+        margin-left: 15px;
+        width: auto;
+        height: auto;
+    }
+    .collapse{
+        display: block;
+    }
+    .menu{
+        width: 100%;
+        height: 400px !important;
+        position: absolute;
+        top: 70px;
+        background-color: #cb4792;
+    }
+}
+@media(min-width:768px){
+    .navbarSection{
+        width: 16%;
+    }
+    .navbarSection .menu,.social-icon{
+        display: block;
+    }
+    .collapse{
+        display: none;
+    }
+    
+    .menu{
+        display: block;
+    }
+}
+@media(min-width:992px){
+    .navbarSection{
+        width: 10%;
+    }
+    .navbarSection .menu,.social-icon{
+        display: block;
+    }
+    .collapse{
+        display: none;
+    }
+    
+    .menu{
+        display: block;
+    }
+}
+@media(min-width:1200px){
+    .collapse{
+        display: none;
+    }
+}

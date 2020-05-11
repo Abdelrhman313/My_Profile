@@ -1,0 +1,89 @@
+.Skills{
+    width: 90%;
+    height: 100%;
+    float: left;
+    padding-top: 90px;
+    margin-left: 10%;
+}
+
+.Skills .skillsBars{
+    width: 60%;
+    float: left;
+}
+
+.Skills .skillsBars h2{
+    width: 70%;
+    margin: 40px auto;
+    color: #8f82ef;
+    font-size: 2em;
+}
+
+.Skills .skillsBars .bar{
+    width: 70%;
+    height: 40px;
+    background-color: #fff;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.Skills .skillsBars .bar span{
+    display: inline-block;
+    height: 100%;
+    line-height: 40px;
+    padding: 0px 10px;
+    color: #fff;
+}
+
+.Skills .skillsBars .bar>div{
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.Skills .skillsBars .bar>div:first-of-type{
+    border-radius: 5px;
+}
+
+.Skills .skillsBars .bar .bar1{width: 100%;background-color: #28b95a;}
+.Skills .skillsBars .bar .bar2{width: 90%;background-color: #6c63ff;}
+.Skills .skillsBars .bar .bar3{width: 80%;background-color: #21b0c8;}
+.Skills .skillsBars .bar .bar4{width: 70%;background-color: #e84444;}
+.Skills .skillsBars .bar .bar5{width: 60%;background-color: #9b9b9b;}
+.Skills .skillsBars .bar .bar6{width: 50%;background-color: #e17526;}
+
+.Skills .skillsBars .bar .progress{
+    width: 70%;
+    float: left;
+}
+.Skills .skillsBars .bar .per{
+    width: 30%;
+    float: right;
+    text-align: right;
+}
+
+.Skills .skillsImg{
+    width: 40%;
+    float: left;
+}
+.Skills .skillsImg img{
+    width: 85%;
+    margin: 100px 0px;
+}
+
+/*For Mobile Media*/
+@media(max-width:767px){
+    .Skills{
+        width: 100%;
+        float: none;
+        margin: 0px;
+        height: 950px;
+        overflow: hidden;
+    }
+    .Skills .skillsBars{
+        width: 100%;
+        float: none;
+    }
+    .Skills .skillsImg{
+        width: 100%;
+        float: none;
+    }
+}
